@@ -21,7 +21,20 @@ except:
     pass
 global keyPath
 print("WUP Auto Packer by Grayforz")
-keyPath = file_path = "utils/nuspacker/encryptKeyWith"
+keyPath = "utils/nuspacker/encryptKeyWith"
+def keyCheck(filePath):
+    if (os.path.getsize(filePath) == 0):
+        print("Enter Wii U common key: ")
+        key = input()
+        if (len(key) == 32):
+            file = open("utils/nuspacker/encryptKeyWith", "w")
+            file.write(key)
+            file.close()
+        else:
+            keyCheck(keyPath)
+
+keyCheck(keyPath)
+
 nusPackagePrompt()
 print("Press enter to exit")
 enter = input()
