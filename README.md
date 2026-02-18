@@ -4,7 +4,7 @@ A simple Python script that automatically packs encrypted NUS packages into inst
 
 # Usage
 
-Upon running the script, you will be asked to provide a valid common key dumped from a Wii U console. Once entered, simply enter the path to your NUS package you want to pack and it will do it automatically. The resulting WUP is stored in the output directory of the program folder.
+Upon running the script, you will be asked to provide a valid common key dumped from a Wii U console (This key is saved in a file and will not need to be entered again on next startup). Once entered, simply enter the path to your NUS package you want to pack and it will do it automatically. The resulting WUP is stored in the output directory of the program folder.
 
 # Utilities used
 
